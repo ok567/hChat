@@ -1,0 +1,127 @@
+!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width minimum-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+        <title>My webpage</title>
+        <link href="path/to/styles.css" rel="stylesheet" />
+        <link href="path/to/mmenu.css" rel="stylesheet" />
+        
+        <style>
+            .preview {
+                display: flex;
+                gap: 15px;
+                align-items: center;
+            }
+            .preview img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #ccc;
+            }
+            .preview > span {
+                flex-grow: 1;
+            }
+
+            .details {
+                padding: 50px 20px;
+            }
+            .details img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin: 0 auto 20px;
+                background: #ccc;
+            }
+            .details strong {
+                display: block;
+                margin-bottom: 20px;
+                text-align: center;
+                font-size: 18px;
+            }
+            .details dl {
+                display: grid;
+                grid-template-columns: auto 1fr;
+            }
+            .details dt,
+            .details dd {
+                padding: 15px 0;
+                margin: 0;
+            }
+            .details dt {
+                padding-right: 15px;
+                color: #999;
+            }
+            .details dd ~ dt,
+            .details dd ~ dd {
+                border-top: 1px solid #ccc;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="page">
+            <div id="header">
+                <a href="#menu"></a>
+            </div>
+            <div id="content">
+                <h1>This is a demo.</h1>
+                <p>Click the menu icon to open the menu.</p>
+            </div>
+        </div>
+
+        <div id="menu">
+            <ul id="contacts">
+                <li>
+                    <span>
+                        <span class="preview">
+                            <img src="path/to/alan.png" />
+                            <span>Alan<br>
+                                <small>Thompson</small>
+                            </span>
+                        </span>
+                    </span>
+                    <div data-mm-title="Alan Thompson">
+                        <div class="details">
+                            <img src="path/to/alan.png" />
+                            <strong>Alan</strong>
+                            <dl>
+                                <dt>Name</dt>
+                                <dd>Alan Thompson</dd>
+
+                                <dt>Phone</dt>
+                                <dd>012-345-6789</dd>
+
+                                <dt>Email</dt>
+                                <dd>info@domain.com</dd>
+
+                                <!-- more <dt />s and <dd />s -->
+                            </dl>
+                        </div>
+                    </div>
+                </li>
+                <!-- more <li />s -->
+            </ul>
+        </div>
+
+        <script src="path/to/mmenu.js"></script>
+        <script>
+            document.addEventListener(
+                "DOMContentLoaded", () => {
+                    new Mmenu( "#menu", {
+                        navbar: {
+                            title: "My contacts"
+                        },
+                        searchfield: {
+                            add: true,
+                            addTo: "#contacts"
+                        },
+                        offCanvas: {
+                            position: "right-front"
+                        }
+                    });
+                }
+            );
+        </script>
+    </body>
+</html>
