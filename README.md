@@ -26,3 +26,6 @@ hChat is a decentralized messaging application built on a custom blockchain deve
 - **Smart Contracts**: JavaScript
 - **Database**: SQL
 
+## Network Architecture
+![BIGGER UML of Network drawio](https://github.com/user-attachments/assets/903dba53-5613-4fb9-b9a3-4f9160b82855)
+
