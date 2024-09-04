@@ -1,4 +1,4 @@
-"# hChat" 
+# hChat
 
 hChat is a decentralized messaging application built on a custom blockchain developed from scratch using JavaScript. The application utilizes JavaScript-based smart contracts to facilitate secure and private communication between users. This project demonstrates the potential of custom blockchain solutions for decentralized applications (dApps).
 
