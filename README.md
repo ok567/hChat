@@ -37,6 +37,19 @@ hChat is a decentralized messaging application built on a custom blockchain deve
 - **Smart Contracts**: JavaScript
 - **Database**: SQL
 
+## Demonstration of the Application
+J sends H “hello”. Client server sends textMessage to light node. Light node receives messages, creates transaction out of received textMessage, digitally signs it and sends it to the service node.
+
+![demo1](https://github.com/user-attachments/assets/7f3f38ee-ca07-4544-854e-16e022d55f82)
+
+Transaction is received by service node, which verifies the signature, adds it the transaction pool, mines the block and adds it to the blockchain.
+
+![demo2](https://github.com/user-attachments/assets/196359fb-55c2-402b-8454-7cc86345202a)
+
+Newly mined block is sent back to the light node and is displayed in chatroom.
+
+![demo3](https://github.com/user-attachments/assets/9d5466f9-8226-416c-b6c3-8e30144533ac)
+
 ## Network Architecture
 
 # Light node
