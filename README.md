@@ -12,7 +12,10 @@ hChat is a decentralized messaging application built on a custom blockchain deve
 
 ## Usage
 
-1. **Register/Login**: Create a new account or log in using your existing credentials.
+1. **Register/Login**: Create a new account or log in using your existing credentials. 
+![Login UI Design drawio](https://github.com/user-attachments/assets/4980c5f1-76d2-4bc4-b3ac-0155772936a6)
+
+
 2. **Start a Chat**: Begin a new conversation by selecting a contact and entering the chatroom.
 3. **Send Messages**: Type and send your message. Messages are encrypted and stored on the custom blockchain.
 4. **View Conversations**: Access your chat history securely at any time.
